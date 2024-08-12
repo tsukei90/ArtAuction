@@ -1,0 +1,249 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Oct, 2023, 3:13:54 AM
+    Author     : AZAM
+*/
+@font-face {
+    font-family: 'ames_romanbold';
+    src: url(fonts/amesroman-bold-webfont.woff2) format('woff2');
+    src: url(fonts/amesroman-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel', sans-serif;
+}
+
+body {
+    font-family: 'Martel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 50px;
+    background: #15161a;
+    color: #c5bc9f;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #c5bc9f;
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Aboreto', sans-serif;
+    color: #c5bc9f;
+}
+small{
+    padding-top: 8px;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: #f1f3f3;
+    padding: 20px;
+    margin: 10px;
+    color: #4e4d4a;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3 {
+    font-weight: 500;
+    font-family: 'Martel', sans-serif;
+}
+
+.user-info i {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0 2.5px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4e4d4a;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    margin: 0;
+}
+
+.sub-menu-link i {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f1f3f3;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 200px; /* Set the desired width */
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 200px; /* Set the desired width */
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 500px; /* Set the desired width */
+    text-align: center;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 100px; /* Set the desired width */
+    text-align: center;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 300px; /* Set the desired width */
+}
+
+
+table img {
+    max-width: 60%; /* Adjust the percentage as needed */
+    height: auto; /* Ensures the original aspect ratio is maintained */
+}
+
+button.bidding-open {
+   
+    font-weight: 100;
+    font-size: 15px;
+    background: black;
+    color: white;
+    border: 2px solid Black;
+    border-radius:10px;
+    width: 150px; 
+    height: 50px;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background: black;
+    color: white;
+    background-color: transparent;
+    color: black;
+    border: 2px solid Black;
+    border-radius:10px;
+    transition-duration: 0.2s;
+}
+
+button.bidding-closed{
+    background: black;
+    color: white;
+    background-color: transparent;
+    color: black;
+    border: 2px solid Black;
+    border-radius:10px;
+    border-radius:10px;
+    width: 150px; 
+    height: 50px;
+    font-weight: 100;
+    font-size: 15px;
+    transition-duration: 0.2s;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.HeadofList h1{
+    font-family: "source sans 3", sans-serif;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}

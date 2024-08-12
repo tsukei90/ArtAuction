@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Martel:wght@200&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JavaScript to set the message content
+            var messageContainer = document.getElementById("message-container");
+
+            // Check if the message parameter is present in the URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var message = urlParams.get("message");
+
+            if (message) {
+                // Display the message on the page
+                messageContainer.innerHTML = "<p style='color:red'>" + message + "</p>";
+            }
+        });
+
+        function validateForm() {
+            var checkbox = document.getElementById('checkbox');
+            
+            if (!checkbox.checked) {
+                alert("Please agree to the Terms & Conditions before submitting the form.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="hero">
+            <nav>
+            <h2>L a u t r e c</h2>
+            </nav>
+        </div>
+       
+    </header>
+
+    
+    <div class="wrapper">
+        <h1>Create Your Account</h1>
+        <form name="frmRegister" onsubmit="return validateForm()" method="POST" action="http://localhost:8080/WebApplication_TEST/WorkRegister">
+        <div>    
+            <input type="text" placeholder="Username" name="tbuser" required>
+            <input type="email" placeholder="Email" name="tbemail" required>
+            <input type="text" placeholder="Name" name="tbname" required>
+            <input type="password" placeholder="Password" name="tbpass" required>
+        </div>
+        <div class="terms">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox">I agree to these <a href="./TERMS_&_CONDITIONS.HTML">Terms & Conditions</a></label>
+        </div>
+            <div id="message-container"></div>
+        <button type="submit" name="bSubmit">Sign Up</button>
+        <div class="member">
+            Already have an account? <a href="http://localhost:8080/WebApplication_TEST/Login.html">
+                Sign In
+            </a>
+        </div>
+        </form>
+    </div>
+    
+    
+    
+    <div class="choice-m">
+        <form name="Change" action="http://localhost:8080/WebApplication_TEST/Admin/Register.html">
+            <button class="choice" type="submit" name="change">Be an Auctioneer</button>
+        </form>  
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'ames_romanbold';
+    src: url(fonts/amesroman-bold-webfont.woff2) format('woff2');
+    src: url(fonts/amesroman-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Martel;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100px;
+    background: #15161a;
+    color: #c5bc9f;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+ nav {
+    width: 100%;
+    padding: 10px 10%;
+    text-align: center;
+}
+   
+h2{
+   font-family: 'Aboreto';
+   font-weight: 300;
+   color: #c5bc9f;
+   font-size: 40px;
+   
+}
+
+body{
+    background: white;
+}
+.wrapper{
+    width: 350px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color:#fff;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+h1{
+    
+    font-size: 25px;
+    font-weight: 100;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+}
+
+h3{
+    
+    font-size: 20px;
+    font-weight: 100;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+}
+
+h4{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 1000;
+    color: #07001f;
+    margin-bottom: 0 rem;
+}
+
+form input{
+    width: 80%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;   
+}
+button{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 85%;
+    color:#fff;
+    cursor: pointer;
+    background: rgb(36, 39, 42);
+}
+button:hover{
+    background: rgba(36, 39, 42, 0.8777);
+    transition-duration: 0.2s;
+}
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.terms input{
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+}
+.terms label{
+    font-size: 0.75rem;
+}
+.terms a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+    text-decoration: none;
+    color: rgb(128, 50, 128);
+    
+}
+
+.recover_forgotpass{
+    text-align: center;
+    font-size: 0.8rem;
+ 
+}
+
+.recover_forgotpass a{
+    text-decoration: none;
+    color: rgb(128, 50, 128);
+    
+}
+
+.VerifyPage button{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1.8rem;
+    padding: 6px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 30%;
+    color:#fff;
+    cursor: pointer;
+    background: rgb(36, 39, 42);
+}
+.VerifyPage button:hover{
+    background: rgba(36, 39, 42, 0.8777);
+    transition-duration: 0.2s;
+}
+
+.choice-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.choice{
+    font-family: 'ames_romanbold', sans-serif;
+    font-size: 20px;
+    background: transparent;
+    color: #15161a;
+    border: 2px solid #15161a;
+    padding: 10px;
+    width: 250px; /* Set the width to your desired value */
+    height: 55px; /* Set the height to match the width */
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.choice:hover{
+    background: #15161a;
+    color: white;
+}
+

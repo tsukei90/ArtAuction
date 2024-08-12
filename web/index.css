@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 Nov, 2023, 2:08:20 PM
+    Author     : AZAM
+#2e3644
+*/
+@font-face {
+    font-family: 'ames_romanbold';
+    src: url('amesroman-bold-webfont.woff2') format('woff2'),
+         url('amesroman-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    background-color: black;
+}
+h2{
+   font-family: Aboreto;
+   font-weight: 300;
+   color: #fbfcfe;
+}
+.front{
+    background-image: url("images/ff main.png");
+    background-attachment: fixed; /*fixing the background image */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding-left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;/* Center children vertically */
+}
+
+.front h2{
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.front p {
+    margin: 5px ;
+    color: #fbfcfe;
+    font-kerning: normal;
+    font-family: Martel;
+    font-size: 20px;
+    
+}
+
+.front button{
+    margin-top: 50px;
+    font-family: Aboreto;
+    font-weight: 100;
+    font-size: 18px;
+    background-color: transparent;;
+    color: #fff;
+    border: 2px solid #fbfcfe;
+    border-radius:10px;
+    width: 150px; 
+    height: 50px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: White; /* Green */
+  color: black;
+}
+

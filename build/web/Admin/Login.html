@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="http://localhost:8080/WebApplication_TEST/Admin/RegistrationStyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Martel:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+            <h2>L a u t r e c</h2>
+            <h5>A U C T I O N E E R</h5> 
+            </nav>
+        </div>
+           
+    </header>
+    
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form name="frmLogin" method="post" action="http://localhost:8080/WebApplication_TEST/WorkLoginAdmin">       
+            <input type="email" placeholder="Email" name="tbemail">
+            <input type="password" placeholder="Password" name="tbpass">
+            <div class="recover">
+                <a href="http://localhost:8080/WebApplication_TEST/Admin/AdminForgotPass/ValidateEmail.html">Forgot Password?</a>
+            </div> 
+            <button class="forgetform_button">Login</button>
+            
+        <div class="member">
+            New here? <a href="http://localhost:8080/WebApplication_TEST/Admin/Register.html">
+                Register Now
+            </a>
+        </div>
+         </form>
+    </div>
+     <div class="choice-m">
+        <form name="Change" action="http://localhost:8080/WebApplication_TEST/Login.html">
+            <button class="choice" type="submit" name="change">Be a Buyer</button>
+        </form>  
+    </div>
+</body>
+</html>

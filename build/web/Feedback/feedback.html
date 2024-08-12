@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Martel:wght@200&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/e457018090.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+        <header>
+        <div class="hero">
+            <nav>
+            <h2><a href="http://localhost:8080/WebApplication_TEST/welcome.jsp" style="color: #c5bc9f; text-decoration: none; font-family: Aboreto">Lautrec</a></h2>
+            <ul>
+                
+                <li><a href="http://localhost:8080/WebApplication_TEST/PrintFromDatabaseImg.jsp">Auctions</a></li>
+                <li><a href="http://localhost:8080/WebApplication_TEST/AboutUs.html">About Us</a></li>
+                <li><a href="http://localhost:8080/WebApplication_TEST/Feedback/feedback.html">Feedback</a></li>
+                
+            </ul>
+            
+      
+            <i class="fa-solid fa-user" style="color: #c5bc9f; margin-left: 30px;" onclick="toggleMenu()" ></i> 
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <h3><%= username %></h3>
+                    </div>
+                        <hr>
+
+                    <a href="http://localhost:8080/WebApplication_TEST/UserProfile.jsp" class="sub-menu-link">
+                        <i class="fa-solid fa-user" style="color: #4e4d4a;"></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>  
+
+                    <a href="Help" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-question" style="color: #4e4d4a;"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>    
+
+                     <a href="http://localhost:8080/WebApplication_TEST/LogoutServlet"class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket" style="color: #4e4d4a;"></i>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>  
+
+                </div>
+            </div>
+            </nav>
+            
+                            
+                    
+ 
+        </div>
+    </header>
+   <div class="mainsec">
+    <h3>We value your feedback</h3>
+    <p>Please complete the following form and help us improve our customer experience.</p>
+    <form action="http://localhost:8080/WebApplication_TEST/FeedbackServlet" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Very Satisfied</th>
+                    <th>Satisfied</th>
+                    <th>Neutral</th>
+                    <th>Unsatisfied</th>
+                    <th>Very Unsatisfied</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>How satisfied are you with our product?</td>
+                    <td><input type="radio" name="productSatisfaction" value="Very Satisfied"></td>
+                    <td><input type="radio" name="productSatisfaction" value="Satisfied"></td>
+                    <td><input type="radio" name="productSatisfaction" value="Neutral"></td>
+                    <td><input type="radio" name="productSatisfaction" value="Unsatisfied"></td>
+                    <td><input type="radio" name="productSatisfaction" value="Very Unsatisfied"></td>
+                </tr>
+                <tr>
+                    <td>How satisfied are you with our service?</td>
+                    <td><input type="radio" name="serviceSatisfaction" value="Very Satisfied"></td>
+                    <td><input type="radio" name="serviceSatisfaction" value="Satisfied"></td>
+                    <td><input type="radio" name="serviceSatisfaction" value="Neutral"></td>
+                    <td><input type="radio" name="serviceSatisfaction" value="Unsatisfied"></td>
+                    <td><input type="radio" name="serviceSatisfaction" value="Very Unsatisfied"></td>
+                </tr>
+                <tr>
+                    <td>How satisfied are you with our team?</td>
+                    <td><input type="radio" name="teamSatisfaction" value="Very Satisfied"></td>
+                    <td><input type="radio" name="teamSatisfaction" value="Satisfied"></td>
+                    <td><input type="radio" name="teamSatisfaction" value="Neutral"></td>
+                    <td><input type="radio" name="teamSatisfaction" value="Unsatisfied"></td>
+                    <td><input type="radio" name="teamSatisfaction" value="Very Unsatisfied"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+        <h4>Tell us how we can improve</h4>
+        <textarea name="improvementComments" rows="4" cols="50"></textarea>
+
+        <br><br>
+        <div class="center-button">
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+</div>
+
+<script>
+       let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+    }
+
+   </script>
+
+</body>
+</html>

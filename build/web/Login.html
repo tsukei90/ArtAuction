@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationStyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Martel:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+            <h2>Lautrec</h2>
+            </nav>
+        </div>
+           
+    </header>
+    
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form name="frmLogin" method="post" action="http://localhost:8080/WebApplication_TEST/WorkLogin">       
+            <input type="email" placeholder="Email" name="tbemail">
+            <input type="password" placeholder="Password" name="tbpass">
+            <div class="recover">
+                <a href="http://localhost:8080/WebApplication_TEST/ForgotPass/ValidateEmail.html">Forgot Password?</a>
+            </div> 
+            <button class="forgetform_button">Login</button>
+            
+        <div class="member">
+            New here? <a href="http://localhost:8080/WebApplication_TEST/Register.html">
+                Register Now
+            </a>
+        </div>
+         </form>
+    </div>
+    
+    <div class="choice-m">
+        <form name="Change" action="http://localhost:8080/WebApplication_TEST/Admin/Login.html">
+            <button class="choice" type="submit" name="change">Be an Auctioneer</button>
+        </form>  
+    </div>
+    
+    
+</body>
+</html>

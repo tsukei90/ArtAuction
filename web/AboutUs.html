@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/WebApplication_TEST/AboutUsStyle.css">
+        <script src="https://kit.fontawesome.com/e457018090.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Martel:wght@200&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Header Used Everywhere-->
+          <header>
+        <div class="hero">
+            <nav>
+            <h2><a href="welcome.jsp" style="color: #c5bc9f; text-decoration: none; font-family: Aboreto">Lautrec</a></h2>
+            <ul>
+                
+                <li><a href="http://localhost:8080/WebApplication_TEST/PrintFromDatabaseImg.jsp">Auctions</a></li>
+                <li><a href="http://localhost:8080/WebApplication_TEST/AboutUs.html">About Us</a></li>
+                <li><a href="http://localhost:8080/WebApplication_TEST/Feedback/feedback.html">Feedback</a></li>
+                
+            </ul>
+            
+      
+            <i class="fa-solid fa-user" style="color: #c5bc9f; margin-left: 30px;" onclick="toggleMenu()" ></i> 
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <h3><%= username %></h3>
+                    </div>
+                        <hr>
+
+                    <a href="http://localhost:8080/WebApplication_TEST/UserProfile.jsp" class="sub-menu-link">
+                        <i class="fa-solid fa-user" style="color: #4e4d4a;"></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>  
+
+                    <a href="Help" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-question" style="color: #4e4d4a;"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>    
+
+                     <a href="LogoutServlet"class="sub-menu-link">
+                        <i class="fa-solid fa-right-from-bracket" style="color: #4e4d4a;"></i>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>  
+
+                </div>
+            </div>
+            </nav>
+            
+                            
+                    
+ 
+        </div>
+    </header>
+        
+                <div class="About"><h1>About us</h1></div>
+        <hr style="width: 5%; margin: 0 500px;">
+        
+        <div class="content">
+        <h3>Welcome to Lautrec Art Auctions</h3>
+        <p>At Lautrec Art Auctions, we believe in the transformative power of art. 
+            Our mission is to connect collectors with exceptional works of art,
+            fostering a community that appreciates and values the beauty and diversity of artistic expression. 
+            Named after the renowned post-impressionist painter Henri de Toulouse-Lautrec, 
+            our company embodies the spirit of creativity, innovation, and passion for the arts.
+            <br><br>
+            Founded on the principles of transparency, integrity, and a deep love for the art world, 
+            Lautrec Art Auctions is dedicated to providing a seamless and enjoyable experience for both buyers and sellers. 
+            Whether you are a seasoned art connoisseur or a first-time buyer, we strive to create a welcoming and accessible platform that 
+            celebrates the unique stories behind each masterpiece.
+        </p>
+        </div>
+        <div class="Imag">
+            <img src="images/About us.jpg">
+        </div>
+            
+
+        
+        
+        <script>
+       let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+
+   </script>
+    </body>
+</html>
